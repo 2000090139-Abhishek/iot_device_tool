@@ -1,0 +1,14 @@
+[
+  {
+    "id": "device01",
+    "ip": "192.168.1.10",
+    "firmware": "v1.0.0",
+    "sensor_status": "ok"
+  },
+  {
+    "id": "device02",
+    "ip": "192.168.1.11",
+    "firmware": "v1.0.0",
+    "sensor_status": "error"
+  }
+]
