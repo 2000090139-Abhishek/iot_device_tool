@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IoT Device Management</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🔧 IoT Device Management Dashboard</h1>
+        <form method="POST" action="/run-checks">
+            <button type="submit">Run Device Status Check</button>
+        </form>
+        {% if results %}
+        <div class="results">
+            <h2>Results:</h2>
+            <ul>
+                {% for result in results %}
+                <li>{{ result }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
